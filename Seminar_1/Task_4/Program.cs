@@ -1,122 +1,47 @@
-﻿// При введении числа нужно получить день недели 
+﻿// Напишите программу, которая на вход принимает одно число (N), а на выходе 
+// показывает все целые числа в промежутке от -N до N. 
+// 4 -> "-4, -3, -2, -1, 0, 1, 2, 3, 4" 
+// 2 -> " -2, -1, 0, 1, 2"
 
 Console.Clear();
 
-// int number;
+int N, Count;
 
-// Console.WriteLine("Введите число");
-// number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число:");
 
-// if (number<1 | number>7)
+N = Convert.ToInt32(Console.ReadLine());
+Count = -N;
 
-// {
-//   Console.WriteLine("Измените число");
-// }
+while (Count <= N)
 
-// if (number == 1)
-
-// {
-//   Console.WriteLine("Понедельник");
-// }
-
-// else if (number == 2)
-
-// {
-//   Console.WriteLine("Вторник");
-// }
-
-// else if (number == 3)
-
-// {
-//   Console.WriteLine("Среда");
-// }
-
-// else if (number == 4)
-
-// {
-//   Console.WriteLine("Четверг");
-// }
-
-// else if (number == 5)
-
-// {
-//   Console.WriteLine("Пятница");
-// }
-
-// else if (number == 6)
-
-// {
-//   Console.WriteLine("Суббота");
-// }
-
-// else if (number == 7)
-
-// {
-//   Console.WriteLine("Воскресенье");
-// }
-
-int day = 0;
-
-Console.WriteLine("Введите день недели");
-
-day = Convert.ToInt32(Console.ReadLine());
-
-switch(day)
 {
-    case 1:
-      {
-          Console.WriteLine("Понедельник");
-          Console.WriteLine();
-          break;
-      }
-
-    case 2:
-      {
-          Console.WriteLine("Вторник");
-          Console.WriteLine();
-          break;
-      }
-
-    case 3:
-      {
-          Console.WriteLine("Среда");
-          Console.WriteLine();
-          break;
-      }
-
-    case 4:
-      {
-          Console.WriteLine("Четверг");
-          Console.WriteLine();
-          break;
-      }
-
-    case 5:
-      {
-          Console.WriteLine("Пятница");
-          Console.WriteLine();
-          break;
-      }
-
-    case 6:
-      {
-          Console.WriteLine("Суббота");
-          Console.WriteLine();
-          break;
-      }
-
-    case 7:
-      {
-          Console.WriteLine("Воскресенье");
-          Console.WriteLine();
-          break;
-      }
-    
-    default:
-      {
-          Console.WriteLine("Нет такого дня недели");
-          Console.WriteLine();
-          break;
-      }
-
+  Console.WriteLine(Count);
+  Count ++;
 }
+
+
+// // Напишите программу, которая на вход принимает одно
+// // число (N), а на выходе показывает все целые числа 
+// // в промежутке от -N до N. 
+// // 4 -> "-4, -3, -2, -1, 0, 1, 2, 3, 4" 
+// // 2 -> " -2, -1, 0, 1, 2"
+
+// Console.WriteLine("Введите Число: ");
+
+// int n = Convert.ToInt32(Console.ReadLine());
+
+// int count = -n;
+
+// while (count < n+1)
+// {
+//     Console.WriteLine(count + " ");
+//     count ++;
+// }
+// // Напишите программу, которая принимает на вход трёхзначное число и на выходе
+// // показывает последнюю цифру этого числа. Например, 456->6 782->2 918->8
+
+// Console.WriteLine ("Введите трехзначное число: ");
+
+// int a = int.Parse(Console.ReadLine());
+
+// Console.WriteLine(a % 10);
