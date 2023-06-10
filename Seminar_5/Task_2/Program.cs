@@ -4,8 +4,6 @@
 
 // [-4, -8, 8, 2] -> [4, 8, -8, -2]
 
-
-
 int[] FillArrayWithRandomNumber(int size)
 {
 int[] arr = new int[size];
