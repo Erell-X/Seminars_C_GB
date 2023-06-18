@@ -30,9 +30,9 @@ void ReplaceRowColomns(int[,] matrix, int[,] resultmatrix)
 {
   for (int i = 0; i < resultmatrix.GetLength(0); i++)
   {
-    for (int j = 0; j < resultmatrix.GetLength(1); j++)
+    for (int j = 0; j < resultmatrix.GetLength(1); j++) 
     {
-      resultmatrix[i, j] = matrix[j, i];
+      resultmatrix[i, j] = matrix[j, i];  
     }
   }
 }
